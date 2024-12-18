@@ -79,11 +79,11 @@ button {
 }
 .correct{
     border : 1px solid  #2c6d2b;
-    background: #c6f5c5;
+    background: #d6f8d6;
 }
 .wrong{
     border: 1px solid#d04007;
-    background: #f1a78a;
+    background: #fde3d9;
 }
 .btn{
     width: 200px;
