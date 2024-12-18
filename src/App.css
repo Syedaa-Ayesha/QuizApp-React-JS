@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+}
+
+.App {
+    background: rgb(162, 205, 240);
+    background: radial-gradient(circle, rgba(162, 205, 240, 1) 0%, rgba(235, 203, 190, 1) 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.heading h1 {
+    font-size: 40px;
+    text-shadow: 0px 0px 5px #5d5763, 0px 0px 10px #79767c, 0px 0px 10px #a699b3,
+        0px 0px 20px #b393d3;
+    letter-spacing: 1px;
+}
+
+.heading span {
+    font-size: 10px;
+
+}
+
+.heading {
+    color: rgb(43, 42, 43);
+}
+
+.container {
+    height: max-content;
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px 20px;
+    background: #f4f2f2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 5px;
+    list-style: none;
+}
+
+ul li {
+    font-size: 16px;
+    border: 1px solid rgb(202, 204, 202);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+button {
+    width: 98.4%;
+    padding: 6px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #459244;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.questionAttempt {
+    margin-top: 20px;
+    text-align: center;
+}
+.correct{
+    border : 1px solid  #2c6d2b;
+    background: #c6f5c5;
+}
+.wrong{
+    border: 1px solid#d04007;
+    background: #f1a78a;
+}
+.btn{
+    width: 200px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+@media (max-width: 440px) {
+    .App {
+        padding-top: 100px;
+        gap: 60px;
+
+    }
+
+    .heading h1 {
+        font-size: 30px;
+
+    }
+
+    .heading span {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    ul li {
+        padding: 4px;
+        font-size: 12px;
+
+    }
+
+    button {
+        width: 96.4%;
+        font-size: 14px;
+    }
+
+}
