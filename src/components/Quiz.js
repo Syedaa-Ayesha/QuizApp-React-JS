@@ -43,7 +43,7 @@ export default function Quiz() {
       })
     }
   }
-  const reset =()=>{
+  const reset = () => {
     setlock(false);
     setQuestion(data[0]);
     setscore(0);
@@ -70,19 +70,21 @@ export default function Quiz() {
             <button type="button" onClick={next} >Next</button>
             <div className="questionAttempt">{count + 1} of {data.length} Questions</div>
           </div>
-          </>
-          }
-          {Result ? <><div className="container" style={{display: 'flex' , alignItems:'center',
-            justifyContent: 'center' , flexDirection: 'column'}}>
-              {score > 8 ? (
-<h2 style={{textAlign:'center'}}>You Scored {score} out of {data.length}! "Pass"&#128525;</h2>
-) : (
-  <h2 style={{textAlign:'center'}}>You Scored {score} out of {data.length}! "Fail"&#128530;</h2>
-)}
-          
+        </>
+        }
+        {Result ? <><div className="container" style={{
+          display: 'flex', alignItems: 'center',
+          justifyContent: 'center', flexDirection: 'column'
+        }}>
+          {score > 8 ? (
+            <h2 style={{ textAlign: 'center' }}>You Scored {score} out of {data.length}! "Pass"&#128525;</h2>
+          ) : (
+            <h2 style={{ textAlign: 'center' }}>You Scored {score} out of {data.length}! "Fail"&#128530;</h2>
+          )}
+
           <button className='btn' onClick={reset}>Reset</button>
-          </div></> : <> </>}
-         
+        </div></> : <> </>}
+
       </div>
     </>
   )
